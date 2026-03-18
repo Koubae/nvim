@@ -1,57 +1,28 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
+-- Customize Mason
+
+---@type LazySpec
 return {
-	"williamboman/mason.nvim",
-	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
-	},
+  -- use mason-tool-installer for automatically installing Mason packages
+  {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    -- overrides `require("mason-tool-installer").setup(...)`
+    opts = {
+      -- Make sure to use the names found in `:Mason`
+      ensure_installed = {
+        -- install language servers
+        "lua-language-server",
 
-	config = function()
-		-- import mason-lspconfig
-		local mason_lspconfig = require("mason-lspconfig")
-		local mason_tool_installer = require("mason-tool-installer")
+        -- install formatters
+        "stylua",
 
-		require("mason").setup({
+        -- install debuggers
+        "debugpy",
 
-			ui = {
-				icons = {
-					package_installed = "✓",
-					package_pending = "➜",
-					package_uninstalled = "✗",
-				},
-			},
-		})
-		mason_lspconfig.setup({
-			-- list of servers for mason to install
-			ensure_installed = {
-				--"tsserver", <= issue
-				"html",
-				"cssls",
-				"tailwindcss",
-				"lua_ls",
-				"graphql",
-				"gopls",
-				-- "bufls", <= not recognized!
-				"emmet_ls",
-				"prismals",
-				"pyright",
-				"templ",
-			},
-			-- auto-install configured servers (with lspconfig)
-			automatic_installation = true, -- not the same as ensure_installed
-		})
-
-		mason_tool_installer.setup({
-			ensure_installed = {
-				"prettier", -- prettier formatter
-				"stylua", -- lua formatter
-				"isort", -- python formatter
-				"black", -- python formatter
-				"debugpy", -- python debugger
-				"golines", -- go formatter
-				"templ",
-				"pylint", -- python linter
-				"eslint_d", -- js linter
-			},
-		})
-	end,
+        -- install any other package
+        "tree-sitter-cli",
+      },
+    },
+  },
 }

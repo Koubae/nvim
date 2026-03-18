@@ -1,39 +1,15 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
+-- Customize Treesitter
+
+---@type LazySpec
 return {
-    "nvim-treesitter/nvim-treesitter",
-    branch = "master",
-    build = ":TSUpdate",
-    config = function ()
-    
-
-      -- Error Failed to run `config` for nvim-treesitter  'nvim-treesitter.configs' not found
-      --vim.cmd('packadd nvim-treesitter')
-      
-
-      local configs = require("nvim-treesitter.configs")
-
-      configs.setup({
-          ensure_installed = { 
-                "lua",
-				"javascript",
-				"typescript",
-				"python",
-				"go",
-				"sql",
-				"make",
-				"dockerfile",
-				"yaml",
-				"graphql",
-				"terraform",
-				"proto",
-				"html",
-                "markdown",
-                "markdown_inline"
-          },
-          sync_install = false,
-          auto_install = true,
-          highlight = { enable = true },
-          indent = { enable = true },  
-        })
-    end
+  "nvim-treesitter/nvim-treesitter",
+  opts = {
+    ensure_installed = {
+      "lua",
+      "vim",
+      -- add more arguments for adding more treesitter parsers
+    },
+  },
 }
-
