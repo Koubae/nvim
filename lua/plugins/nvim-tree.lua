@@ -11,8 +11,8 @@ local function my_on_attach(bufnr)
   -- CUSTOMIZATIONS: Override split mappings
   
     -- your custom split mappings
-    vim.keymap.set("n", "<C-l>", api.node.open.vertical, opts("Open: Vertical Split CTRL+l"))
-    vim.keymap.set("n", "<C-j>", api.node.open.horizontal, opts("Open: Horizontal Split CTRL+j"))
+    vim.keymap.set("n", "<C-A-l>", api.node.open.vertical, opts("Open: Vertical Split CTRL+l"))
+    vim.keymap.set("n", "<C-A-j>", api.node.open.horizontal, opts("Open: Horizontal Split CTRL+j"))
 
 end
 
