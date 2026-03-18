@@ -31,7 +31,7 @@ return {
             "lua_ls",
             "graphql",
             "gopls",
-            "bufls",
+            -- "bufls", <= not recognized!
             "emmet_ls",
             "prismals",
             "pyright",
