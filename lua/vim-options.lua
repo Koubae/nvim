@@ -12,7 +12,7 @@ vim.opt.smartindent = true
 vim.opt.autoindent = true
 
 -- This keybinding uses jk as escape but don't know if like it 
-vim.api.nvim_set_keymap('i', 'jk', '<ESC>', { noremap = true })
+vim.api.nvim_set_keymap('i', 'qq', '<ESC>', { noremap = true })
 
 -- This keymap clears the search
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
