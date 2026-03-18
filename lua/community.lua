@@ -7,6 +7,11 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+  
+  -- THEMES 
+  { import = "astrocommunity.colorscheme.catppuccin" },
+
+  -- LANGUAGES
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
 
