@@ -5,6 +5,20 @@ Koubae's Neovim Configs
 
 Check out different branches for different versions and setups.
 
+### Initial installation requirements
+
+* Install NerdFonts --> https://www.nerdfonts.com/
+* EnvyCodeR 
+
+**Install Ripgrep**
+
+```bash
+# ripgrep
+sudo apt update
+sudo apt install ripgrep
+
+```
+
 
 #### Presetups
 
