@@ -11,11 +11,11 @@ vim.opt.showmode = true
 vim.opt.smartindent = true
 vim.opt.autoindent = true
 
--- This keybinding uses jk as escape but don't know if like it 
-vim.api.nvim_set_keymap('i', 'qq', '<ESC>', { noremap = true })
+-- This keybinding uses jk as escape but don't know if like it
+vim.api.nvim_set_keymap("i", "qq", "<ESC>", { noremap = true })
 
 -- This keymap clears the search
-vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err")
 vim.keymap.set("n", "<leader>ff", ":!gofmt -w %<CR><CR>")
 vim.keymap.set("n", "<leader>pp", ":!prettier -w %<CR><CR>") -- prettier formatter
@@ -29,4 +29,12 @@ vim.keymap.set("n", "<leader>pp", ":!prettier -w %<CR><CR>") -- prettier formatt
 vim.keymap.set("n", "<leader><Up>", "<C-w>+", { desc = "Increase split height", silent = true })
 vim.keymap.set("n", "<leader><Down>", "<C-w>-", { desc = "Decrease split height", silent = true })
 vim.keymap.set("n", "<leader><Right>", "<C-w>>", { desc = "Increase split width", silent = true })
-vim.keymap.set("n", "<leader><Left>", "<C-w><", { desc = "Decrease split width", silent = true })
+vim.keymap.set("n", "<leader><Left>", "<C-w><", { desc = "Decrease spldfst width", silent = true })
+
+-- Keybindings
+--vim.keymap.set("n", "<leader>º", "<cmd>Telescope keymaps<cr>", { desc = "Show keymaps" })
+vim.keymap.set("n", "<leader>º", function()
+	require("telescope.builtin").keymaps({
+		modes = { "n", "i", "c", "x", "o", "t" },
+	})
+end, { desc = "Show all keymaps" })
