@@ -26,6 +26,8 @@ return {
 				"terraform",
 				"proto",
 				"html",
+                "markdown",
+                "markdown_inline"
           },
           sync_install = false,
           auto_install = true,
