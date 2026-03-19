@@ -9,7 +9,7 @@ return {
   "AstroNvim/astrocommunity",
   
   -- THEMES 
-  { import = "astrocommunity.colorscheme.catppuccin" },
+ -- { import = "astrocommunity.colorscheme.catppuccin" },
 
   -- LANGUAGES
   { import = "astrocommunity.pack.lua" },

@@ -1,18 +1,18 @@
 -- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
-  {
-    "folke/tokyonight.nvim",
-    opts = {
-      style = "storm",
-    },
-  },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    opts = {
-      flavour = "mocha",
-    },
-  },
+  -- {
+  --   "folke/tokyonight.nvim",
+  --   opts = {
+  --     style = "storm",
+  --   },
+  -- },
+  -- {
+  --   "catppuccin/nvim",
+  --   name = "catppuccin",
+  --   opts = {
+  --     flavour = "mocha",
+  --   },
+  -- },
 
   {
     "scottmckendry/cyberdream.nvim",
@@ -25,25 +25,25 @@ return {
     },
   },
 
-  {
-    "rebelot/kanagawa.nvim",
-    opts = {
-      theme = "dragon",
-      -- transparent = false, -- change to true if you want transparency
-      transparent = true, -- change to true if you want transparency
-      overrides = function(colors)
-        local theme = colors.theme
-        return {
-          NormalFloat = { bg = "none" },
-          FloatBorder = { bg = "none" },
-          FloatTitle = { bg = "none" },
-          NormalDark = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
-          LazyNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
-          MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
-        }
-      end,
-    },
-  },
+  -- {
+  --   "rebelot/kanagawa.nvim",
+  --   opts = {
+  --     theme = "dragon",
+  --     -- transparent = false, -- change to true if you want transparency
+  --     transparent = true, -- change to true if you want transparency
+  --     overrides = function(colors)
+  --       local theme = colors.theme
+  --       return {
+  --         NormalFloat = { bg = "none" },
+  --         FloatBorder = { bg = "none" },
+  --         FloatTitle = { bg = "none" },
+  --         NormalDark = { fg = theme.ui.fg_dim, bg = theme.ui.bg_m3 },
+  --         LazyNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+  --         MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+  --       }
+  --     end,
+  --   },
+  -- },
 
   -- {
   --   "pmouraguedes/neodarcula.nvim",
