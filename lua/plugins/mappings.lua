@@ -10,6 +10,27 @@ return {
 
           --["<X5Mouse>"] = { "<C-o>", desc = "Jump back" },
           --.["<X4Mouse>"] = { "<C-i>", desc = "Jump forward" },
+
+          -- Buffer navigation
+          ["<Tab><Left>"] = {
+            function() require("astrocore.buffer").nav(-1) end,
+            desc = "Previous buffer",
+          },
+          ["<Tab><Right>"] = {
+            function() require("astrocore.buffer").nav(1) end,
+            desc = "Next buffer",
+          },
+
+          -- Buffer reordering
+          ["<Tab><Up>"] = {
+            function() require("astrocore.buffer").move(1) end,
+            desc = "Move buffer right",
+          },
+          ["<Tab><Down>"] = {
+            function() require("astrocore.buffer").move(-1) end,
+            desc = "Move buffer left",
+          },
+
         },
         i = {
           ["<C-z>"] = { "<C-o>u", desc = "Undo" },
