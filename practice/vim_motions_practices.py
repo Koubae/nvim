@@ -24,6 +24,10 @@ variable_example_4 = "abc"
 
 my_vars = (variable_example_1, variable_example_2, variable_example_3, variable_example_4)
 
+
+# change by pressing c in normal mode
+var_to_change = "abc"
+
 # WORD 
 [1,2,3,4,5], (1,2,3,4,5)
 

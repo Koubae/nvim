@@ -60,7 +60,7 @@ return {
       -- first key is the `augroup` to add the auto commands to (:h augroup)
       lsp_codelens_refresh = {
         -- Optional condition to create/delete auto command group
-        -- can either be a string of a client capability or a function of `fun(client, bufnr): boolean`
+          -- can either be a string of a client capability or a function of `fun(client, bufnr): boolean`
         -- condition will be resolved for each client on each execution and if it ever fails for all clients,
         -- the auto commands will be deleted for that buffer
         cond = "textDocument/codeLens",

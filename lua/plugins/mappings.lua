@@ -31,6 +31,13 @@ return {
             desc = "Move buffer left",
           },
 
+
+
+          -- Real tab management
+          ["<Tab>n"] = { "<cmd>tabnew<CR>", desc = "New tab" },
+          ["<Tab>o"] = { "<cmd>tabprevious<CR>", desc = "Previous tab" },
+          ["<Tab>i"] = { "<cmd>tabnext<CR>", desc = "Next tab" },
+
         },
         i = {
           ["<C-z>"] = { "<C-o>u", desc = "Undo" },
