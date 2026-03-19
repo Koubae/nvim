@@ -2,12 +2,20 @@
 
 @Credit: https://www.barbarianmeetscoding.com/boost-your-coding-fu-with-vscode-and-vim/moving-blazingly-fast-with-the-core-vim-motions/
 
+
+- gd        => go to definition | go to local declaration 
+- gD        => go to global definition
+- gf        => go to file of an import | go to file under cursor 
+
+- Ctrl + O  => Previous position | Jump Back 
+- Ctrl + i  => Forward position  | Jump Forth
+
 """
 
 # word
 [1, 2, 3, 4, 5], (1, 2, 3, 4, 5)
 
-my_variable_example_1 = "12345_12345"
+my_variable_example_0 = "12345_12345"
 
 variable_example_1 = "abc"
 variable_example_2 = "abc"
@@ -21,6 +29,14 @@ my_vars = (variable_example_1, variable_example_2, variable_example_3, variable_
 
 WORD_1 = "Iam_A_WORD(WORD)"
 WORD_2 = "sum(2,3)"
+
+# change word capitalization => https://stackoverflow.com/a/2946054/13903942
+# quite useful cheat sheat
+# ~         - flips char current selection 
+# gU<motion>
+# g+u+e     - uppercase all word 
+# g+u+e     - lowercase all word 
+varSomeConstant = "VAR_123"
 
 
 
