@@ -29,6 +29,9 @@ require("lazy").setup({
       },
     },
   },
-    
 
+  -- Configure any other `lazy.nvim` configuration options here
+  rocks = {
+    enabled = false, -- This stops the error by disabling LuaRocks support
+  },
 } --[[@as LazyConfig]])
