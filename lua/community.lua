@@ -15,6 +15,9 @@ return {
   { import = "astrocommunity.pack.lua" },
   -- import/override with your plugins folder
 
+  -- Testing
+  { import = "astrocommunity.test.neotest" },
+
   -- Golang
   { import = "astrocommunity.pack.go" },
 
@@ -44,4 +47,6 @@ return {
   --     }
   --   end,
   -- },
+
+  -- { import = "astrocommunity.utility.overseer-nvim" },
 }

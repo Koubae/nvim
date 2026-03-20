@@ -1,4 +1,4 @@
--- if true then return {} end
+if true then return {} end
 
 --
 --
@@ -33,7 +33,7 @@
 --             staticcheck = true,
 --
 --             -- Add this to help differentiate packages
---             directoryFilters = { "-**/node_modules", "-.git" }, 
+--             directoryFilters = { "-**/node_modules", "-.git" },
 --           },
 --         },
 --       },
