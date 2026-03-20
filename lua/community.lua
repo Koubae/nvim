@@ -18,25 +18,30 @@ return {
   -- Golang
   { import = "astrocommunity.pack.go" },
 
-  {
-    "mfussenegger/nvim-dap",
-    dependencies = { "leoluz/nvim-dap-go" },
-    opts = function(_, opts)
-      local dap = require "dap"
-      dap.configurations.go = {
-        {
-          type = "go",
-          name = "Debug Package (Current Dir)",
-          request = "launch",
-          program = "${fileDirname}",
-        },
-        {
-          type = "go",
-          name = "Debug File (main.go)",
-          request = "launch",
-          program = "${file}",
-        },
-      }
-    end,
-  },
+  -- NOTE:    How Run configurations works in AstroNvim
+  --          Short Answer: Exactly like VSCode
+  --          You can define a .vscode/launch.json per project or add them (similarly to this below)
+  --          And you consider this as "global" configuration
+  --          F5 to run & Debug
+  -- {
+  --   "mfussenegger/nvim-dap",
+  --   dependencies = { "leoluz/nvim-dap-go" },
+  --   opts = function(_, opts)
+  --     local dap = require "dap"
+  --     dap.configurations.go = {
+  --       {
+  --         type = "go",
+  --         name = "Debug Package (Current Dir)",
+  --         request = "launch",
+  --         program = "${fileDirname}",
+  --       },
+  --       {
+  --         type = "go",
+  --         name = "Debug File (main.go)",
+  --         request = "launch",
+  --         program = "${file}",
+  --       },
+  --     }
+  --   end,
+  -- },
 }
