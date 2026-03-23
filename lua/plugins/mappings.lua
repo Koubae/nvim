@@ -14,6 +14,7 @@ return {
           -- ["<S-Right>"] = { "5zl", desc = "Scroll Right" },
           -- ["<S-Left>"] = { "5zh", desc = "Scroll Left" },
           -- Alternatively, use Alt+H/L
+          -- ALT+l | ALT+h
           ["<A-l>"] = { "5zl", desc = "Fast Scroll Right" },
           ["<A-h>"] = { "5zh", desc = "Fast Scroll Left" },
           --["<X5Mouse>"] = { "<C-o>", desc = "Jump back" },
